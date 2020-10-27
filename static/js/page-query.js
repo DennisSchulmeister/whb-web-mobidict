@@ -74,7 +74,7 @@ class PageQuery {
 
     /**
      * Unregister event listeners to prevent memory leaks and undefined
-     * behaviour when the same page if opened several times in a row.
+     * behaviour when the same page is opened several times in a row.
      */
     hide() {
         this._inputField.removeEventListener("keyup", this._keyUpListener);
