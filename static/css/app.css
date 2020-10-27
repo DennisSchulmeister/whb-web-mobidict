@@ -158,9 +158,15 @@ header nav .menu-left li {
  * MAIN AREA
  */
 main {
-    padding: var(--content-padding);
-    background: rgba(240,240,240, 0.9);
     flex: 1;
+    padding: var(--content-padding);
+
+    /* https://pixabay.com/vectors/bible-storying-ccx-2-kings-2687864/ */
+    background-color: rgba(240,240,240, 0.9);
+    background-image: url(../img/background.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom
 }
 
 main a,
