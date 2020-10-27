@@ -1,2 +1,15 @@
 #page-query {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+#page-query .result .word {
+    font-style: italic;
+}
+
+#page-query .result td {
+    padding: 0.5em;
 }

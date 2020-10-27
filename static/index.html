@@ -18,6 +18,7 @@
         <script src="js/page-not-found.js"></script>
 
         <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="css/searchbar.css" />
         <link rel="stylesheet" href="css/page-home.css" />
         <link rel="stylesheet" href="css/page-query.css" />
         <link rel="stylesheet" href="css/page-contact.css" />
@@ -107,7 +108,17 @@
         <!-- Page: Query -->
         <!-- =========== -->
         <main id="page-query" class="hidden">
-            QUERY
+            <div class="searchbar">
+                <input class="search-query" placeholder="Search dictionary" />
+                <button class="search-button icon-search"></button>
+            </div>
+
+            <table class="result">
+            </table>
+
+            <div class="actions">
+                <a href="" class="action-download">Download</a>
+            </div>
         </main>
 
         <!-- =========== -->
