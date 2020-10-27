@@ -43,6 +43,11 @@ body {
     display: none !important;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /*
  * HEADER
  */
