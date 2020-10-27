@@ -1,0 +1,164 @@
+/**
+ * COMMON SETTINGS
+ */
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+
+    --content-padding: 1rem;
+}
+
+@media (min-width: 40em) {
+    html {
+        font-size: 15pt;
+    }
+}
+
+@media (min-width: 60em) {
+    html {
+        font-size: 16pt;
+    }
+}
+
+@media (min-width: 80em) {
+    html {
+        font-size: 18pt;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * HEADER
+ */
+
+/* General styling of the menu bar */
+header {
+    --text-color: black;
+    --icon-color: black;
+}
+
+header nav {
+    padding: var(--content-padding);
+    color: var(--text-color);
+}
+
+header nav i {
+    color: var(--icon-color);
+}
+
+header nav .page-name {
+    font-weight: bold;
+}
+
+header nav .logo {
+    display: inline-block;
+    height: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    padding: 0.25em 0 0.25em 0;
+}
+
+/* Link Colors */
+header nav a,
+header nav a:visited {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+header nav a:hover {
+    color: var(--icon-color);
+}
+
+header nav a i,
+header nav a:visited i {
+    color: var(--icon-color);
+}
+
+header nav a:hover i {
+    color: var(--text-color);
+}
+
+/* Left menu */
+header nav .menu-left {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(var(--content-padding) / 2);
+}
+
+header nav .menu-left li {
+    display: inline-block;
+}
+
+/* Adaption to different screen sizes */
+@media (max-width: 40em) {
+    .small-screen-hidden {
+        display: none;
+    }
+
+    header nav .menu-right {
+        margin-top: var(--content-padding);
+    }
+
+    header nav .menu-right li {
+        text-align: right;
+    }
+}
+
+@media (min-width: 40em) {
+    .small-screen-only {
+        display: none !important;
+    }
+
+    .logo {
+        padding-right: var(--content-padding);
+    }
+
+    header nav,
+    header nav .menu-right {
+        display: flex;
+    }
+
+    header nav .menu-right li {
+        padding-left: var(--content-padding);
+    }
+
+    header nav .menu-left {
+        flex: 1;
+    }
+}
+
+/*
+ * MAIN AREA
+ */
+main {
+    padding: var(--content-padding);
+    background: rgba(240,240,240, 0.9);
+    flex: 1;
+}
+
+main a,
+main a:visited {
+    color: crimson;
+    text-decoration: underline;
+    transition: color 0.25s;
+}
+
+main a:hover {
+    color: red;
+}

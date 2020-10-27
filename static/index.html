@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Mobidict</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="/img/favicon.svg" />
+        <link rel="stylesheet" href="fontello/css/fontello.css" />
+
+        <script src="js/app.js"></script>
+        <script src="js/page-home.js"></script>
+        <script src="js/page-query.js"></script>
+        <script src="js/page-about.js"></script>
+        <script src="js/page-contact.js"></script>
+        <script src="js/page-not-found.js"></script>
+
+        <link rel="stylesheet" href="css/app.css" />
+
+        <!-- Start application -->
+        <script>
+            window.addEventListener("load", () => {
+                let pages = [{
+                    url: "^/$",
+                    klass: PageHome,
+                },{
+                    url: "^/query/(.*)$",
+                    klass: PageQuery,
+                },{
+                    url: "^/about$",
+                    klass: PageAbout,
+                },{
+                    url: "^/contact$",
+                    klass: PageContact,
+                },{
+                    url: ".*",
+                    klass: PageNotFound,
+                }];
+
+                let app = new App("Mobidict", pages);
+                app.run();
+            });
+        </script>
+    </head>
+    <body>
+        <!-- =========================== -->
+        <!-- Header (same for all pages) -->
+        <!-- =========================== -->
+        <header>
+            <nav>
+                <!-- Logo and hamburger toggle button -->
+                <ul class="menu-left">
+                    <img class="logo" src="img/logo.svg" alt="Logo" />
+
+                    <li class="toggle-menu small-screen-only">
+                        <a href="#">
+                            <i class="icon-menu"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Global app menu -->
+                <ul class="menu-right small-screen-hidden">
+                    <li>
+                        <a href="#/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ========== -->
+        <!-- Page: Home -->
+        <!-- ========== -->
+        <main id="page-home" class="hidden">
+            HOME
+        </main>
+
+        <!-- =========== -->
+        <!-- Page: Query -->
+        <!-- =========== -->
+        <main id="page-query" class="hidden">
+            QUERY
+        </main>
+
+        <!-- =========== -->
+        <!-- Page: About -->
+        <!-- =========== -->
+        <main id="page-about" class="hidden">
+            ABOUT
+        </main>
+
+        <!-- ============= -->
+        <!-- Page: Contact -->
+        <!-- ============= -->
+        <main id="page-contact" class="hidden">
+            CONTACT
+        </main>
+
+        <!-- =============== -->
+        <!-- Page: Not Found -->
+        <!-- =============== -->
+        <main id="page-not-found" class="hidden">
+            NOT FOUND
+        </main>
+    </body>
+</html>
