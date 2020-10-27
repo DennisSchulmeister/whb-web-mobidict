@@ -7,7 +7,13 @@ Short description
 A mobile-friendly online dictionary. This is an examination in web development
 for my master studie at Wilhelm-Büchner-Hochschule, Germany.
 
-**TODO: Screenshots**
+![Screenshot 1](screenshot1.png)
+
+![Screenshot 2](screenshot2.png)
+
+![Screenshot 3](screenshot3.png)
+
+![Screenshot 4](screenshot4.png)
 
 This is a real app, that is realy working. :-) Use the following commands to
 set up a node.js environment and start the server:
