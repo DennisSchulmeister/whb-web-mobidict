@@ -5,7 +5,7 @@ Short description
 -----------------
 
 A mobile-friendly online dictionary. This is an examination in web development
-for my master studie at Wilhelm-Büchner-Hochschule, Germany.
+for my master studies at Wilhelm-Büchner-Hochschule, Germany.
 
 ![Screenshot 1](screenshots/screenshot1.png)
 
