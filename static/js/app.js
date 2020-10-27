@@ -91,6 +91,10 @@ class App {
             return;
         }
 
+        if (this._currentPageObject && this._currentPageObject.hide) {
+            this._currentPageObject.hide();
+        }
+
         this._currentPageObject = new page.klass(this);
         this._currentPageObject.show(matches);
     }
