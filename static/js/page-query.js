@@ -40,10 +40,10 @@ class PageQuery {
 
         // Set up download link
         let actionDownloadLink = document.querySelector("#page-query .action-download");
-        actionDownloadLink.href = `http://localhost:8888/api/query?q=${encodeURI(query)}&format=text`;
+        actionDownloadLink.href = `/api/query?q=${encodeURI(query)}&format=text`;
 
         // Fetch result
-        let result = await fetch(`http://localhost:8888/api/query?q=${encodeURI(query)}&format=json`);
+        let result = await fetch(`/api/query?q=${encodeURI(query)}&format=json`);
         let json = await result.json();
 
         let resultElement = document.querySelector("#page-query .result");
