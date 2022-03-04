@@ -4,11 +4,14 @@
   "description": "Online dictionary for mobile devices",
   "main": "server.js",
   "scripts": {
-    "run": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "Dennis Schulmeister-Zimolong <dennis@wpvs.de>",
   "license": "AGPL-3.0",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
